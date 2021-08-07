@@ -1,0 +1,11 @@
+@use '../abstract/variables'as *;
+@use '../abstract/mixins'as*;
+
+body {
+  @include font-face (default, 400, $font-med);
+
+  ::selection {
+    background: $very-dark-violet;
+    color: $very-light-gray;
+  }
+}
