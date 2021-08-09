@@ -35,11 +35,11 @@
   }
 }
 :root {
-  --dark-violet: #2d2640;
-  --grayish-blue: #95a9c6;
-  --very-dark-violet: #2b272f;
-  --dark-grayish-violet: #837d87;
-  --very-light-gray: #fafafa;
+  --dark-violet: hsl(256, 26%, 20%);
+  --grayish-blue: hsl(216, 30%, 68%);
+  --very-dark-violet: hsl(270, 9%, 17%);
+  --dark-grayish-violet: hsl(273, 4%, 51%);
+  --very-light-gray: hsl(0, 0%, 98%);
 }
 
 :root {
@@ -55,8 +55,8 @@ body {
   font-weight: 400;
 }
 body ::selection {
-  background: #2b272f;
-  color: #fafafa;
+  background: var(--very-dark-violet);
+  color: var(--very-light-gray);
 }
 
 html {
@@ -83,9 +83,10 @@ main {
   display: block;
 }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
+h1,
+h2,
+h3 {
+  margin: 0 0 1rem;
 }
 
 hr {
