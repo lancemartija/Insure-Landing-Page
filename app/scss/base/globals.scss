@@ -4,7 +4,7 @@ body {
   @include font-face (default, 400, $font-med);
 
   ::selection {
-    background: $very-dark-violet;
-    color: $very-light-gray;
+    background: var(--very-dark-violet);
+    color: var(--very-light-gray);
   }
 }
