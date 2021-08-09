@@ -1,4 +1,3 @@
-@use 'abstract/mixins';
-@use 'abstract/variables';
-@use 'base/globals';
-@use 'base/reset';
+@use 'abstract';
+@use 'base';
+@use 'layout';

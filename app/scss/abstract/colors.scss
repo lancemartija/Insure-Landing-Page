@@ -7,8 +7,10 @@ $very-dark-violet: hsl(270, 9%, 17%);
 $dark-grayish-violet: hsl(273, 4%, 51%);
 $very-light-gray: hsl(0, 0%, 98%);
 
-// Font Sizes
-$font-sm: 0.875rem; // 14px
-$font-med: 1rem; // 16px (default size)
-$font-lg: 1.5rem; // 24px
-$font-xlg: 4rem; // 64px
+:root {
+  --dark-violet: #{$dark-violet};
+  --grayish-blue: #{$grayish-blue};
+  --very-dark-violet: #{$very-dark-violet};
+  --dark-grayish-violet: #{$dark-grayish-violet};
+  --very-light-gray: #{$very-light-gray};
+}
