@@ -5,8 +5,8 @@
   text-align: center;
 
   @include breakpoint-up(large) {
-    text-align: left;
     padding: rem(305) rem(120);
+    text-align: left;
   }
 
   @include breakpoint-up(xlarge) {
@@ -20,10 +20,10 @@
 
       &::before {
         @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
-        width: rem(150);
-        margin: auto;
-        height: rem(2);
         background-color: #9E96C6;
+        height: rem(2);
+        margin: auto;
+        width: rem(150);
 
         @include breakpoint-up(large) {
           margin: 0;
@@ -36,8 +36,8 @@
     &-wrapper {
       @include breakpoint-up(large) {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
         gap: rem(30);
+        grid-template-columns: 1fr 1fr 1fr;
       }
     }
 
@@ -51,8 +51,8 @@
       &--details {
         >h2 {
           @include font-face(heading, rem(28), 400, var(--very-dark-violet));
-          padding-top: rem(32);
           margin-bottom: rem(18);
+          padding-top: rem(32);
         }
 
         >p {

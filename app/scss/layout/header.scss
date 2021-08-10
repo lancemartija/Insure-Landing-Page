@@ -3,9 +3,9 @@
 .header {
   align-items: center;
   background-color: #fff;
-  padding: rem(24);
   display: flex;
   justify-content: space-between;
+  padding: rem(24);
 
   @include breakpoint-up(medium) {
     padding: rem(28) rem(72);

@@ -4,8 +4,8 @@
   &-1 {
     &--desktop {
       @include position(absolute, $top: 0, $right: 0);
-      z-index: 1;
       overflow: hidden;
+      z-index: 1;
 
       >svg {
         margin: rem(-80) 0 0;
