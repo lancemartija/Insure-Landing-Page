@@ -447,7 +447,7 @@ template {
     width: 33.75rem;
   }
 }
-.hero__heading > h1 {
+.hero__heading {
   font-family: var(--font-family-serif);
   color: var(--very-light-gray);
   font-size: 2.875rem;
@@ -457,10 +457,10 @@ template {
   position: relative;
 }
 @media (min-width: 64em) {
-  .hero__heading > h1 {
+  .hero__heading {
     padding-top: 3rem;
   }
-  .hero__heading > h1::before {
+  .hero__heading::before {
     position: absolute;
     content: "";
     top: 0;
@@ -471,17 +471,17 @@ template {
   }
 }
 @media (min-width: 87.5em) {
-  .hero__heading > h1 {
+  .hero__heading {
     font-size: 3.375rem;
     padding-top: 4.5rem;
   }
 }
 @media (min-width: 87.5em) {
-  .hero__heading > h1 {
+  .hero__heading {
     font-size: 4.5rem;
   }
 }
-.hero__details > p {
+.hero__details {
   font-family: var(--font-family-sans-serif);
   color: var(--very-light-gray);
   font-size: 1rem;
@@ -522,14 +522,14 @@ template {
     padding: 19.0625rem 10.3125rem;
   }
 }
-.features__heading > h1 {
+.features__heading {
   font-family: var(--font-family-serif);
   color: var(--very-dark-violet);
   font-size: 2.875rem;
   font-weight: 400;
   position: relative;
 }
-.features__heading > h1::before {
+.features__heading::before {
   position: absolute;
   content: "";
   top: -2rem;
@@ -541,7 +541,7 @@ template {
   width: 9.375rem;
 }
 @media (min-width: 64em) {
-  .features__heading > h1::before {
+  .features__heading::before {
     margin: 0;
   }
 }
@@ -571,15 +571,17 @@ template {
 }
 
 .footer {
+  text-align: center;
+}
+
+.attribution {
   font-family: var(--font-family-sans-serif);
   color: var(--very-light-gray);
   font-size: 0.75rem;
   font-weight: 400;
   background-color: var(--very-dark-violet);
   padding: 0.75rem;
-  text-align: center;
 }
-
 .attribution > a {
   font-family: var(--font-family-serif);
   color: var(--very-light-gray);
