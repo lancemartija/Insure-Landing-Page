@@ -31,7 +31,7 @@
         <div class="header__links">
           <a href="#">How we work</a><a href="#">Blog</a><a href="#">Account</a>
         </div>
-        <button class="header__links--btn">View plans</button>
+        <button class="header__links--btn" type="button">View plans</button>
       </div>
       <div class="header__nav--mobile hide-for-desktop">
         <div class="header__burger">
@@ -65,28 +65,22 @@
     </nav>
   </header>
   <main>
-    <section class="hero">
+    <article class="hero">
       <div class="hero__content-wrapper">
-        <div class="hero__banner">
+        <figure class="hero__banner">
           <img src="app/images/image-intro-desktop.jpg" alt="picture of a man and a woman 2 children walking"
             class="hide-for-mobile">
           <img src="app/images/image-intro-mobile.jpg" alt="picture of a man and a woman 2 children walking"
             class="hide-for-desktop">
-        </div>
-        <div class="hero__text-wrapper">
-          <div class="hero__heading">
-            <h1>Humanizing your insurance.</h1>
-          </div>
-          <div class="hero__details">
-            <p>Get your life insurance coverage easier and faster. We blend
-              our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved
-              ones
-              are
-              protected.</p>
-          </div>
-          <div class="hero__btn">
-            <button class="hero__btn--cta">View plans</button>
-          </div>
+        </figure>
+        <section class="hero__text-wrapper">
+          <h1 class="hero__heading">Humanizing your insurance.</h1>
+          <p class="hero__details">Get your life insurance coverage easier and faster. We blend
+            our expertise and technology to help you find the plan that’s right for you. Ensure you and your loved
+            ones
+            are
+            protected.</p>
+          <button class="hero__btn--cta" type="button">View plans</button>
           <div class="image-overlay-1--mobile hide-for-desktop">
             <svg xmlns="http://www.w3.org/2000/svg" width="168" height="165">
               <g fill="none" fill-rule="evenodd" stroke="#96A9C6">
@@ -117,7 +111,7 @@
               </g>
             </svg>
           </div>
-        </div>
+        </section>
       </div>
       <div class="image-overlay-1--desktop hide-for-mobile">
         <svg xmlns="http://www.w3.org/2000/svg" width="436" height="593">
@@ -155,11 +149,9 @@
           </g>
         </svg>
       </div>
-    </section>
+    </article>
     <article class="features">
-      <div class="features__heading">
-        <h1>We’re different</h1>
-      </div>
+      <h1 class="features__heading">We’re different</h1>
       <div class="features__section-wrapper">
         <section class="features__section-1">
           <div class="features__section-1--icon">
@@ -210,11 +202,17 @@
           </div>
         </section>
       </div>
-    </article> Find out more about how
-    we work How we work Our company How we work Why Insure? View plans Reviews Help me FAQ Terms of use Privacy
-    policy Cookies Contact Sales Support Live chat Others Careers Press Licenses
+    </article>
+    <article class="cta-banner">
+      <h1 class="cta-banner__heading">Find out more about how we work</h1>
+      <button class="cta-banner__btn">How we work</button>
+    </article>
   </main>
   <footer class="footer">
+    <nav>How we work Our company How we work Why Insure? View plans Reviews Help me FAQ Terms of use
+      Privacy
+      policy Cookies Contact Sales Support Live chat Others Careers Press Licenses
+    </nav>
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="https://github.com/lancemartija">Lance Martija</a>.
