@@ -28,7 +28,10 @@ $breakpoints-down: ("small": "39.9375em",
 
 // ---------- FONT-FACE MIXINS ---------- //
 
-@mixin font-face($type: 'default', $size, $weight, $color: null) {
+@mixin font-face($type: 'default',
+  $size,
+  $weight,
+  $color: null) {
   @if $type=='heading' {
     font-family: var(--font-family-serif);
   }
@@ -49,7 +52,12 @@ $breakpoints-down: ("small": "39.9375em",
 
 // ---------- OFFSET POSITIONING MIXINS ---------- //
 
-@mixin position($position, $content: null, $top: null, $right: null, $bottom: null, $left: null) {
+@mixin position ($position,
+  $content: null,
+  $top: null,
+  $right: null,
+  $bottom: null,
+  $left: null) {
   position: $position;
   content: $content;
   top: $top;
