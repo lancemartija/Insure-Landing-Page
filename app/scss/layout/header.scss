@@ -84,6 +84,7 @@
       padding: rem(48) rem(24) 0;
       text-align: center;
       visibility: hidden;
+      z-index: 1;
 
       >a {
         @include font-face(default, rem(18), 700, $color: var(--very-light-gray));
