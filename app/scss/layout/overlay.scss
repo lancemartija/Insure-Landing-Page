@@ -1,0 +1,19 @@
+@use '../abstract'as *;
+
+.image-overlay {
+  &-1 {
+    &--desktop {
+      @include position(absolute, $top: 0, $right: 0);
+      z-index: 1;
+      overflow: hidden;
+
+      >svg {
+        margin: rem(-80) 0 0;
+      }
+    }
+
+    &--mobile {
+      @include position(absolute, $top: 0, $left: 0);
+    }
+  }
+}
