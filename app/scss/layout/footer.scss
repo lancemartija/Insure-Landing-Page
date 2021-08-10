@@ -6,7 +6,9 @@
   background-color: var(--very-dark-violet);
   padding: rem(12);
   text-align: center;
+}
 
+.attribution {
   >a {
     @include font-face(heading, rem(12), 400, var(--very-light-gray));
     position: relative;
