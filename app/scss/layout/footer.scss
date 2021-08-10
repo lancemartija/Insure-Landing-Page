@@ -1,14 +1,15 @@
 @use '../abstract'as *;
 
 .footer {
-  @include font-face(default, rem(12), 400, var(--very-light-gray));
   // @include position(absolute, $right: 0, $bottom: 0, $left: 0);
-  background-color: var(--very-dark-violet);
-  padding: rem(12);
   text-align: center;
 }
 
 .attribution {
+  @include font-face(default, rem(12), 400, var(--very-light-gray));
+  background-color: var(--very-dark-violet);
+  padding: rem(12);
+
   >a {
     @include font-face(heading, rem(12), 400, var(--very-light-gray));
     position: relative;

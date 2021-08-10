@@ -14,20 +14,18 @@
   }
 
   &__heading {
-    >h1 {
-      @include font-face(heading, rem(46), 400, var(--very-dark-violet));
-      position: relative;
+    @include font-face(heading, rem(46), 400, var(--very-dark-violet));
+    position: relative;
 
-      &::before {
-        @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
-        background-color: #9E96C6;
-        height: rem(2);
-        margin: auto;
-        width: rem(150);
+    &::before {
+      @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
+      background-color: #9E96C6;
+      height: rem(2);
+      margin: auto;
+      width: rem(150);
 
-        @include breakpoint-up(large) {
-          margin: 0;
-        }
+      @include breakpoint-up(large) {
+        margin: 0;
       }
     }
   }

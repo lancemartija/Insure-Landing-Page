@@ -48,57 +48,53 @@
   }
 
   &__heading {
-    >h1 {
-      @include font-face(heading, rem(46), 400, var(--very-light-gray));
-      line-height: .9;
-      padding-top: rem(72);
-      position: relative;
+    @include font-face(heading, rem(46), 400, var(--very-light-gray));
+    line-height: .9;
+    padding-top: rem(72);
+    position: relative;
 
-      @include breakpoint-up(large) {
-        padding-top: rem(48);
+    @include breakpoint-up(large) {
+      padding-top: rem(48);
 
-        &::before {
-          @include position(absolute, $content: '', $top: 0, $left: 0);
-          background-color: var(--very-light-gray);
-          height: rem(2);
-          width: rem(150);
-        }
-      }
-
-      @include breakpoint-up(xlarge) {
-        font-size: rem(54);
-        padding-top: rem(72);
-      }
-
-      @include breakpoint-up(xlarge) {
-        font-size: rem(72);
+      &::before {
+        @include position(absolute, $content: '', $top: 0, $left: 0);
+        background-color: var(--very-light-gray);
+        height: rem(2);
+        width: rem(150);
       }
     }
+
+    @include breakpoint-up(xlarge) {
+      font-size: rem(54);
+      padding-top: rem(72);
+    }
+
+    @include breakpoint-up(xlarge) {
+      font-size: rem(72);
+    }
+
   }
 
   &__details {
-    >p {
-      @include font-face(default, $font-med, 400, var(--very-light-gray));
-      padding: rem(18) 0;
-    }
+    @include font-face(default, $font-med, 400, var(--very-light-gray));
+    padding: rem(18) 0;
   }
 
-  &__btn {
-    &--cta {
-      @include font-face(default, $font-sm, 700, $color: var(--very-light-gray));
-      background-color: var(--dark-violet);
-      border-radius: 0;
-      border: 2px solid var(--very-light-gray);
-      cursor: pointer;
-      letter-spacing: rem(.8);
-      padding: rem(16) rem(28);
-      text-transform: uppercase;
-      transition: all 150ms ease-in-out;
+  &__btn--cta {
+    @include font-face(default, $font-sm, 700, $color: var(--very-light-gray));
+    background-color: var(--dark-violet);
+    border-radius: 0;
+    border: 2px solid var(--very-light-gray);
+    cursor: pointer;
+    letter-spacing: rem(.8);
+    padding: rem(16) rem(28);
+    text-transform: uppercase;
+    transition: all 150ms ease-in-out;
 
-      &:hover {
-        background-color: var(--very-light-gray);
-        color: var(--very-dark-violet);
-      }
+    &:hover {
+      background-color: var(--very-light-gray);
+      color: var(--very-dark-violet);
     }
+
   }
 }
