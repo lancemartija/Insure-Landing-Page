@@ -1,0 +1,56 @@
+@use '../abstract'as *;
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: rem(28) rem(224);
+
+  &__logo {
+    >svg {
+      display: block;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    gap: rem(46);
+
+    &-links {
+      display: flex;
+      gap: rem(46);
+
+      >a {
+        color: var(--dark-grayish-violet);
+        font-family: var(--font-family-sans-serif);
+        font-size: rem(16);
+        font-weight: 700;
+        text-transform: uppercase;
+        transition: all 200ms ease-in-out;
+
+        &:hover {
+          color: var(--dark-violet);
+        }
+      }
+
+      &--btn {
+        background-color: var(--very-light-gray);
+        border-radius: 0;
+        border: 2px solid var(--very-dark-violet);
+        cursor: pointer;
+        font-family: var(--font-family-sans-serif);
+        font-size: rem(16);
+        font-weight: 700;
+        padding: rem(16) rem(34);
+        text-transform: uppercase;
+        transition: all 150ms ease-in-out;
+
+        &:hover {
+          background-color: var(--very-dark-violet);
+          color: var(--very-light-gray);
+        }
+      }
+    }
+  }
+}
