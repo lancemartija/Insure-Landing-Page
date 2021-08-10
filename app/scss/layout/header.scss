@@ -2,18 +2,22 @@
 
 .header {
   align-items: center;
-  background-color: var(--very-light-gray);
+  background-color: #fff;
+  padding: rem(24);
   display: flex;
   justify-content: space-between;
-  padding: rem(21) rem(165);
 
-  @include breakpoint-down(large) {
+  @include breakpoint-up(medium) {
     padding: rem(28) rem(72);
   }
 
-  @include breakpoint-down(medium) {
-    background-color: #fff;
-    padding: rem(24);
+  @include breakpoint-up(large) {
+    background-color: var(--very-light-gray);
+    padding: rem(21) rem(120);
+  }
+
+  @include breakpoint-up(xlarge) {
+    padding: rem(21) rem(165);
   }
 
   &__logo {
