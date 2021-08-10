@@ -4,9 +4,13 @@
   background-color: var(--dark-violet);
 
   @include breakpoint-up(large) {
-    padding: 0 rem(165);
+    padding: 0 rem(120);
     height: rem(600);
     position: relative;
+  }
+
+  @include breakpoint-up(xlarge) {
+    padding: 0 rem(165);
   }
 
   &__content-wrapper {
@@ -14,6 +18,11 @@
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
+      transform: translateY(rem(72));
+      gap: rem(30);
+    }
+
+    @include breakpoint-up(xlarge) {
       transform: translateY(rem(105));
     }
   }
@@ -28,29 +37,26 @@
 
   &__text-wrapper {
     position: relative;
+    padding: rem(28) rem(26) rem(100);
+    text-align: center;
 
     @include breakpoint-up(large) {
+      padding: 0;
+      text-align: left;
       width: rem(540);
-    }
-
-    @include breakpoint-down(medium) {
-      text-align: center;
-      padding: rem(28) 0 rem(100);
     }
   }
 
   &__heading {
     >h1 {
-      @include font-face(heading, rem(72), 400, var(--very-light-gray));
+      @include font-face(heading, rem(46), 400, var(--very-light-gray));
       line-height: .9;
       position: relative;
       padding-top: rem(72);
 
-      @include breakpoint-down(medium) {
-        font-size: rem(48);
-      }
-
       @include breakpoint-up(large) {
+        padding-top: rem(48);
+
         &::before {
           @include position(absolute, $content: '', $top: 0, $left: 0);
           width: rem(150);
@@ -58,13 +64,21 @@
           background-color: var(--very-light-gray);
         }
       }
+
+      @include breakpoint-up(xlarge) {
+        padding-top: rem(72);
+        font-size: rem(54);
+      }
+
+      @include breakpoint-up(xlarge) {
+        font-size: rem(72);
+      }
     }
   }
 
   &__details {
     >p {
       @include font-face(default, $font-med, 400, var(--very-light-gray));
-      line-height: 1.5;
       padding: rem(18) 0;
     }
   }
