@@ -293,9 +293,9 @@ template {
 .header {
   align-items: center;
   background-color: #fff;
-  padding: 1.5rem;
   display: flex;
   justify-content: space-between;
+  padding: 1.5rem;
 }
 @media (min-width: 40em) {
   .header {
@@ -406,8 +406,8 @@ template {
 }
 @media (min-width: 64em) {
   .hero {
-    padding: 0 7.5rem;
     height: 37.5rem;
+    padding: 0 7.5rem;
     position: relative;
   }
 }
@@ -420,9 +420,9 @@ template {
   .hero__content-wrapper {
     display: flex;
     flex-direction: row-reverse;
+    gap: 1.875rem;
     justify-content: space-between;
     transform: translateY(4.5rem);
-    gap: 1.875rem;
   }
 }
 @media (min-width: 87.5em) {
@@ -432,12 +432,12 @@ template {
 }
 .hero__banner > img {
   display: block;
-  width: 100%;
   height: auto;
+  width: 100%;
 }
 .hero__text-wrapper {
-  position: relative;
   padding: 1.75rem 1.625rem 6.25rem;
+  position: relative;
   text-align: center;
 }
 @media (min-width: 64em) {
@@ -453,8 +453,8 @@ template {
   font-size: 2.875rem;
   font-weight: 400;
   line-height: 0.9;
-  position: relative;
   padding-top: 4.5rem;
+  position: relative;
 }
 @media (min-width: 64em) {
   .hero__heading > h1 {
@@ -465,15 +465,15 @@ template {
     content: "";
     top: 0;
     left: 0;
-    width: 9.375rem;
-    height: 0.125rem;
     background-color: var(--very-light-gray);
+    height: 0.125rem;
+    width: 9.375rem;
   }
 }
 @media (min-width: 87.5em) {
   .hero__heading > h1 {
-    padding-top: 4.5rem;
     font-size: 3.375rem;
+    padding-top: 4.5rem;
   }
 }
 @media (min-width: 87.5em) {
@@ -513,8 +513,8 @@ template {
 }
 @media (min-width: 64em) {
   .features {
-    text-align: left;
     padding: 19.0625rem 7.5rem;
+    text-align: left;
   }
 }
 @media (min-width: 87.5em) {
@@ -535,10 +535,10 @@ template {
   top: -2rem;
   right: 0;
   left: 0;
-  width: 9.375rem;
-  margin: auto;
-  height: 0.125rem;
   background-color: #9E96C6;
+  height: 0.125rem;
+  margin: auto;
+  width: 9.375rem;
 }
 @media (min-width: 64em) {
   .features__heading > h1::before {
@@ -548,8 +548,8 @@ template {
 @media (min-width: 64em) {
   .features__section-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     gap: 1.875rem;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }
 .features__section-1--icon, .features__section-2--icon, .features__section-3--icon {
@@ -560,8 +560,8 @@ template {
   color: var(--very-dark-violet);
   font-size: 1.75rem;
   font-weight: 400;
-  padding-top: 2rem;
   margin-bottom: 1.125rem;
+  padding-top: 2rem;
 }
 .features__section-1--details > p, .features__section-2--details > p, .features__section-3--details > p {
   font-family: var(--font-family-sans-serif);
@@ -608,8 +608,8 @@ template {
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
   overflow: hidden;
+  z-index: 1;
 }
 .image-overlay-1--desktop > svg {
   margin: -5rem 0 0;
