@@ -1,0 +1,31 @@
+@use '../abstract'as *;
+
+.footer {
+  @include font-face(default, rem(12), 400, var(--very-light-gray));
+  @include position(absolute, $right: 0, $bottom: 0, $left: 0);
+  background-color: var(--very-dark-violet);
+  padding: rem(12);
+  text-align: center;
+
+  >a {
+    @include font-face(heading, rem(12), 400, var(--very-light-gray));
+    position: relative;
+    transition: all 150ms ease-in-out;
+
+    &::before {
+      @include position(absolute, $content: '', $bottom: 0);
+      background-color: var(--very-light-gray);
+      height: rem(1);
+      transition: all 150ms ease-in-out;
+      width: 100%;
+    }
+
+    &:hover {
+      color: var(--grayish-blue);
+
+      &::before {
+        background-color: var(--grayish-blue);
+      }
+    }
+  }
+}
