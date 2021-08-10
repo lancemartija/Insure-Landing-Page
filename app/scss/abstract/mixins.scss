@@ -49,8 +49,9 @@ $breakpoints-down: ("small": "39.9375em",
 
 // ---------- OFFSET POSITIONING MIXINS ---------- //
 
-@mixin position($position, $top: null, $right: null, $bottom: null, $left: null) {
+@mixin position($position, $content: null, $top: null, $right: null, $bottom: null, $left: null) {
   position: $position;
+  content: $content;
   top: $top;
   right: $right;
   bottom: $bottom;
