@@ -360,6 +360,7 @@ template {
   padding: 3rem 1.5rem 0;
   text-align: center;
   visibility: hidden;
+  z-index: 1;
 }
 .header__burger-links > a {
   font-family: var(--font-family-sans-serif);
@@ -379,6 +380,43 @@ template {
   cursor: pointer;
   padding: 1rem;
   text-transform: uppercase;
+}
+
+.footer {
+  font-family: var(--font-family-sans-serif);
+  color: var(--very-light-gray);
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: var(--very-dark-violet);
+  padding: 0.75rem;
+  text-align: center;
+}
+.footer > a {
+  font-family: var(--font-family-serif);
+  color: var(--very-light-gray);
+  font-size: 0.75rem;
+  font-weight: 400;
+  position: relative;
+  transition: all 150ms ease-in-out;
+}
+.footer > a::before {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  background-color: var(--very-light-gray);
+  height: 0.0625rem;
+  transition: all 150ms ease-in-out;
+  width: 100%;
+}
+.footer > a:hover {
+  color: var(--grayish-blue);
+}
+.footer > a:hover::before {
+  background-color: var(--grayish-blue);
 }
 
 /*# sourceMappingURL=styles.css.map */
