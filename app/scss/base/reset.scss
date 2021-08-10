@@ -1,3 +1,5 @@
+@use '../abstract'as *;
+
 html {
   line-height: 1.15;
   font-size: 100%;
@@ -14,8 +16,12 @@ html {
 
 body {
   height: 100%;
-  margin: 0;
+  // margin: 0;
   padding: 0;
+
+  @include breakpoint-down(large) {
+    margin: 0;
+  }
 }
 
 main {
@@ -24,7 +30,8 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0 0 1rem;
 }
 
