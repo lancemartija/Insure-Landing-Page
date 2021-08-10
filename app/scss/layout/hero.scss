@@ -1,0 +1,90 @@
+@use '../abstract'as *;
+
+.hero {
+  background-color: var(--dark-violet);
+
+  @include breakpoint-up(large) {
+    padding: 0 rem(165);
+    height: rem(600);
+    position: relative;
+  }
+
+  &__content-wrapper {
+    @include breakpoint-up(large) {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      transform: translateY(rem(105));
+    }
+  }
+
+  &__banner {
+    >img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__text-wrapper {
+    position: relative;
+
+    @include breakpoint-up(large) {
+      width: rem(540);
+    }
+
+    @include breakpoint-down(medium) {
+      text-align: center;
+      padding: rem(28) 0 rem(100);
+    }
+  }
+
+  &__heading {
+    >h1 {
+      @include font-face(heading, rem(72), 400, var(--very-light-gray));
+      line-height: .9;
+      position: relative;
+      padding-top: rem(72);
+
+      @include breakpoint-down(medium) {
+        font-size: rem(48);
+      }
+
+      @include breakpoint-up(large) {
+        &::before {
+          @include position(absolute, $content: '', $top: 0, $left: 0);
+          width: rem(150);
+          height: rem(2);
+          background-color: var(--very-light-gray);
+        }
+      }
+    }
+  }
+
+  &__details {
+    >p {
+      @include font-face(default, $font-med, 400, var(--very-light-gray));
+      line-height: 1.5;
+      padding: rem(18) 0;
+    }
+  }
+
+  &__btn {
+    &--cta {
+      @include font-face(default, $font-sm, 700, $color: var(--very-light-gray));
+      background-color: var(--dark-violet);
+      border-radius: 0;
+      border: 2px solid var(--very-light-gray);
+      cursor: pointer;
+      letter-spacing: rem(.8);
+      padding: rem(16) rem(28);
+      text-transform: uppercase;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: var(--very-light-gray);
+        color: var(--very-dark-violet);
+      }
+    }
+  }
+}
