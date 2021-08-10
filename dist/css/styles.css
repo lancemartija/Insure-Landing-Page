@@ -60,8 +60,15 @@ body {
   background-color: var(--very-light-gray);
 }
 body ::selection {
-  background: var(--very-dark-violet);
+  background: var(--grayish-blue);
   color: var(--very-light-gray);
+}
+@media (min-width: 87.5em) {
+  body {
+    max-width: 90rem;
+    margin: auto;
+    background-color: #fff;
+  }
 }
 
 @media (min-width: 64em) {
@@ -100,8 +107,12 @@ html {
 
 body {
   height: 100%;
-  margin: 0;
   padding: 0;
+}
+@media (max-width: 87.4375em) {
+  body {
+    margin: 0;
+  }
 }
 
 main {
@@ -110,7 +121,8 @@ main {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0 0 1rem;
 }
 
@@ -280,9 +292,10 @@ template {
 
 .header {
   align-items: center;
+  background-color: var(--very-light-gray);
   display: flex;
   justify-content: space-between;
-  padding: 1.75rem 14rem;
+  padding: 1.3125rem 10.3125rem;
 }
 @media (max-width: 87.4375em) {
   .header {
@@ -310,12 +323,12 @@ template {
 }
 .header__links {
   display: flex;
-  gap: 2.875rem;
+  gap: 2.125rem;
 }
 .header__links > a {
   font-family: var(--font-family-sans-serif);
   color: var(--dark-grayish-violet);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
   transition: all 200ms ease-in-out;
@@ -326,12 +339,13 @@ template {
 .header__links--btn {
   font-family: var(--font-family-sans-serif);
   color: var(--very-dark-violet);
-  font-size: 1rem;
+  font-size: 0.875rem;
   font-weight: 700;
   border-radius: 0;
   border: 2px solid var(--very-dark-violet);
   cursor: pointer;
-  padding: 1rem 2.125rem;
+  letter-spacing: 0.05rem;
+  padding: 1rem 1.75rem;
   text-transform: uppercase;
   transition: all 150ms ease-in-out;
 }
@@ -382,15 +396,100 @@ template {
   text-transform: uppercase;
 }
 
+.hero {
+  background-color: var(--dark-violet);
+}
+@media (min-width: 64em) {
+  .hero {
+    padding: 0 10.3125rem;
+    height: 37.5rem;
+    position: relative;
+  }
+}
+@media (min-width: 64em) {
+  .hero__content-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    transform: translateY(6.5625rem);
+  }
+}
+.hero__banner > img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.hero__text-wrapper {
+  position: relative;
+}
+@media (min-width: 64em) {
+  .hero__text-wrapper {
+    width: 33.75rem;
+  }
+}
+@media (max-width: 63.9375em) {
+  .hero__text-wrapper {
+    text-align: center;
+    padding: 1.75rem 0 6.25rem;
+  }
+}
+.hero__heading > h1 {
+  font-family: var(--font-family-serif);
+  color: var(--very-light-gray);
+  font-size: 4.5rem;
+  font-weight: 400;
+  line-height: 0.9;
+  position: relative;
+  padding-top: 4.5rem;
+}
+@media (max-width: 63.9375em) {
+  .hero__heading > h1 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 64em) {
+  .hero__heading > h1::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 9.375rem;
+    height: 0.125rem;
+    background-color: var(--very-light-gray);
+  }
+}
+.hero__details > p {
+  font-family: var(--font-family-sans-serif);
+  color: var(--very-light-gray);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 1.125rem 0;
+}
+.hero__btn--cta {
+  font-family: var(--font-family-sans-serif);
+  color: var(--very-light-gray);
+  font-size: 0.875rem;
+  font-weight: 700;
+  background-color: var(--dark-violet);
+  border-radius: 0;
+  border: 2px solid var(--very-light-gray);
+  cursor: pointer;
+  letter-spacing: 0.05rem;
+  padding: 1rem 1.75rem;
+  text-transform: uppercase;
+  transition: all 150ms ease-in-out;
+}
+.hero__btn--cta:hover {
+  background-color: var(--very-light-gray);
+  color: var(--very-dark-violet);
+}
+
 .footer {
   font-family: var(--font-family-sans-serif);
   color: var(--very-light-gray);
   font-size: 0.75rem;
   font-weight: 400;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  left: 0;
   background-color: var(--very-dark-violet);
   padding: 0.75rem;
   text-align: center;
@@ -418,6 +517,22 @@ template {
 }
 .attribution > a:hover::before {
   background-color: var(--grayish-blue);
+}
+
+.image-overlay-1--desktop {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+.image-overlay-1--desktop > svg {
+  margin: -5rem 0 0;
+}
+.image-overlay-1--mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */
