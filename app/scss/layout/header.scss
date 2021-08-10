@@ -2,9 +2,10 @@
 
 .header {
   align-items: center;
+  background-color: var(--very-light-gray);
   display: flex;
   justify-content: space-between;
-  padding: rem(28) rem(224);
+  padding: rem(21) rem(165);
 
   @include breakpoint-down(large) {
     padding: rem(28) rem(72);
@@ -37,10 +38,10 @@
 
   &__links {
     display: flex;
-    gap: rem(46);
+    gap: rem(34);
 
     >a {
-      @include font-face(default, $font-med, 700, $color: var(--dark-grayish-violet));
+      @include font-face(default, $font-sm, 700, $color: var(--dark-grayish-violet));
       text-transform: uppercase;
       transition: all 200ms ease-in-out;
 
@@ -50,11 +51,12 @@
     }
 
     &--btn {
-      @include font-face(default, $font-med, 700, $color: var(--very-dark-violet));
+      @include font-face(default, $font-sm, 700, $color: var(--very-dark-violet));
       border-radius: 0;
       border: 2px solid var(--very-dark-violet);
       cursor: pointer;
-      padding: rem(16) rem(34);
+      letter-spacing: rem(.8);
+      padding: rem(16) rem(28);
       text-transform: uppercase;
       transition: all 150ms ease-in-out;
 
