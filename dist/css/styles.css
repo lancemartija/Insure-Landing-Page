@@ -395,7 +395,8 @@ template {
   padding: 0.75rem;
   text-align: center;
 }
-.footer > a {
+
+.attribution > a {
   font-family: var(--font-family-serif);
   color: var(--very-light-gray);
   font-size: 0.75rem;
@@ -403,7 +404,7 @@ template {
   position: relative;
   transition: all 150ms ease-in-out;
 }
-.footer > a::before {
+.attribution > a::before {
   position: absolute;
   content: "";
   bottom: 0;
@@ -412,10 +413,10 @@ template {
   transition: all 150ms ease-in-out;
   width: 100%;
 }
-.footer > a:hover {
+.attribution > a:hover {
   color: var(--grayish-blue);
 }
-.footer > a:hover::before {
+.attribution > a:hover::before {
   background-color: var(--grayish-blue);
 }
 
