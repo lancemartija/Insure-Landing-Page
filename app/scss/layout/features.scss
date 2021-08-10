@@ -1,0 +1,64 @@
+@use '../abstract'as *;
+
+.features {
+  padding: rem(188) rem(26) rem(140);
+  text-align: center;
+
+  @include breakpoint-up(large) {
+    text-align: left;
+    padding: rem(305) rem(120);
+  }
+
+  @include breakpoint-up(xlarge) {
+    padding: rem(305) rem(165);
+  }
+
+  &__heading {
+    >h1 {
+      @include font-face(heading, rem(46), 400, var(--very-dark-violet));
+      position: relative;
+
+      &::before {
+        @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
+        width: rem(150);
+        margin: auto;
+        height: rem(2);
+        background-color: #9E96C6;
+
+        @include breakpoint-up(large) {
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  &__section {
+    &-wrapper {
+      @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: rem(30);
+      }
+    }
+
+    &-1,
+    &-2,
+    &-3 {
+      &--icon {
+        padding-top: rem(44);
+      }
+
+      &--details {
+        >h2 {
+          @include font-face(heading, rem(28), 400, var(--very-dark-violet));
+          padding-top: rem(32);
+          margin-bottom: rem(18);
+        }
+
+        >p {
+          @include font-face(default, $font-med, 400, var(--dark-grayish-violet));
+        }
+      }
+    }
+  }
+}
