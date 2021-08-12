@@ -1,19 +1,19 @@
 @use '../abstract'as *;
 
 .footer {
-  text-align: center;
-  position: relative;
-  padding: rem(54) 0 rem(70);
   background-color: var(--very-light-gray);
   overflow: hidden;
+  padding: rem(54) 0 rem(70);
+  position: relative;
+  text-align: center;
 
   @include breakpoint-up(medium) {
     padding: 0 rem(24) rem(64);
   }
 
   @include breakpoint-up(large) {
-    text-align: left;
     padding: 0 rem(146) rem(64);
+    text-align: left;
   }
 
   &__section-wrapper {
@@ -25,17 +25,17 @@
     }
 
     &-1 {
-      padding: rem(16) 0;
-      margin: 0 rem(16);
       border-bottom: 1px solid #d9d9d9;
+      margin: 0 rem(16);
+      padding: rem(16) 0;
 
       @include breakpoint-up(medium) {
         margin: 0;
       }
 
       @include breakpoint-up(large) {
-        display: flex;
         align-items: center;
+        display: flex;
         justify-content: space-between;
         padding: rem(48) 0 rem(36);
       }
@@ -69,10 +69,10 @@
   }
 
   &__socials {
-    padding: rem(16);
     display: flex;
     gap: rem(16);
     justify-content: center;
+    padding: rem(16);
 
     &--facebook,
     &--twitter,
@@ -102,8 +102,8 @@
 
   &__heading {
     @include font-face(default, $font-sm, 700, var(--dark-grayish-violet));
-    text-transform: uppercase;
     margin: rem(40) 0 rem(27);
+    text-transform: uppercase;
 
     @include breakpoint-up(large) {
       margin: rem(48) 0 rem(34);
@@ -115,16 +115,16 @@
 
     >a {
       @include font-face(default, $font-sm, 700, var(--very-dark-violet));
-      text-transform: uppercase;
       position: relative;
+      text-transform: uppercase;
 
       &:hover {
         &::before {
           @include position(absolute, $content: '', $bottom: 0, $left: 0);
-          width: 100%;
-          height: rem(1);
           background-color: var(--very-dark-violet);
+          height: rem(1);
           transform: translateY(rem(-2));
+          width: 100%;
         }
       }
     }
@@ -132,8 +132,8 @@
 }
 
 .attribution {
-  @include position(absolute, $right: 0, $bottom: 0, $left: 0);
   @include font-face(default, rem(12), 400, var(--very-light-gray));
+  @include position(absolute, $right: 0, $bottom: 0, $left: 0);
   background-color: var(--very-dark-violet);
   padding: rem(12);
   text-align: center;
