@@ -41,10 +41,11 @@
   }
 
   &__links {
+    align-items: center;
     display: flex;
     gap: rem(34);
 
-    >a {
+    a {
       @include font-face(default, $font-sm, 700, $color: var(--dark-grayish-violet));
       text-transform: uppercase;
       transition: all 200ms ease-in-out;
@@ -59,10 +60,12 @@
       border-radius: 0;
       border: 2px solid var(--very-dark-violet);
       cursor: pointer;
+      height: rem(40);
       letter-spacing: rem(.8);
-      padding: rem(16) rem(28);
       text-transform: uppercase;
       transition: all 150ms ease-in-out;
+      margin: 0 auto;
+      width: rem(146);
 
       &:hover {
         background-color: var(--very-dark-violet);
@@ -103,8 +106,11 @@
         background-color: var(--very-dark-violet);
         border: 2px solid var(--very-light-gray);
         cursor: pointer;
-        padding: rem(16);
+        height: rem(56);
         text-transform: uppercase;
+        margin: 0 auto;
+        max-width: rem(327);
+        width: 100%;
       }
     }
   }
