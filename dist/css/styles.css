@@ -335,7 +335,7 @@ template {
   font-size: 0.875rem;
   font-weight: 700;
   text-transform: uppercase;
-  transition: all 200ms ease-in-out;
+  transition: all 150ms ease-in-out;
 }
 .header__links a:hover {
   color: var(--dark-violet);
