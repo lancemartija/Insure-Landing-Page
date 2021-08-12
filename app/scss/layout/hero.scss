@@ -36,24 +36,31 @@
   }
 
   &__text-wrapper {
-    padding: rem(28) rem(26) rem(100);
-    position: relative;
-    text-align: center;
+    @include breakpoint-down(medium) {
+      padding: rem(28);
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 500px;
+    }
 
     @include breakpoint-up(large) {
-      padding: 0;
       text-align: left;
       width: rem(540);
     }
   }
 
   &__heading {
-    @include font-face(heading, rem(46), 400, var(--very-light-gray));
+    @include font-face(heading, rem(48), 400, var(--very-light-gray));
+    letter-spacing: rem(-1);
     line-height: .9;
-    padding-top: rem(72);
     position: relative;
+    margin-bottom: rem(6);
 
     @include breakpoint-up(large) {
+      letter-spacing: 0;
       padding-top: rem(48);
 
       &::before {
@@ -77,7 +84,7 @@
 
   &__details {
     @include font-face(default, $font-med, 400, var(--very-light-gray));
-    padding: rem(18) 0;
+    padding: rem(20) 0;
   }
 
   &__btn--cta {
@@ -86,10 +93,13 @@
     border-radius: 0;
     border: 2px solid var(--very-light-gray);
     cursor: pointer;
+    height: rem(40);
     letter-spacing: rem(.8);
-    padding: rem(16) rem(28);
     text-transform: uppercase;
     transition: all 150ms ease-in-out;
+    margin: 0 auto;
+    max-width: rem(146);
+    width: 100%;
 
     &:hover {
       background-color: var(--very-light-gray);
