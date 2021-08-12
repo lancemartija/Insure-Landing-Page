@@ -7,7 +7,6 @@ html {
 
 body {
   @include font-face (default, $font-med, 400);
-  background-color: var(--very-light-gray);
 
   ::selection {
     background: var(--grayish-blue);
@@ -17,7 +16,6 @@ body {
   @include breakpoint-up(xlarge) {
     max-width: rem(1440);
     margin: auto;
-    background-color: #fff;
   }
 }
 
