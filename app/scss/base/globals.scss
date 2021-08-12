@@ -13,10 +13,10 @@ body {
     color: var(--very-light-gray);
   }
 
-  @include breakpoint-up(xlarge) {
-    max-width: rem(1440);
-    margin: auto;
-  }
+  // @include breakpoint-up(xlarge) {
+  //   max-width: rem(1440);
+  //   margin: auto;
+  // }
 }
 
 .hide-for-desktop {
