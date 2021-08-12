@@ -14,7 +14,7 @@
   }
 
   @include breakpoint-up(xlarge) {
-    padding: rem(305) rem(165);
+    padding: rem(305) rem(165) rem(205);
   }
 
   &__heading {
