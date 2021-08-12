@@ -68,7 +68,7 @@
       &::before {
         @include position(absolute, $content: '', $top: 0, $left: 0);
         background-color: var(--very-light-gray);
-        height: rem(2);
+        height: rem(1);
         width: rem(150);
       }
     }
