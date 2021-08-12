@@ -46,16 +46,14 @@
         padding-top: rem(44);
       }
 
-      &--details {
-        >h2 {
-          @include font-face(heading, rem(28), 400, var(--very-dark-violet));
-          margin-bottom: rem(18);
-          padding-top: rem(32);
-        }
+      &--heading {
+        @include font-face(heading, rem(28), 400, var(--very-dark-violet));
+        margin-bottom: rem(18);
+        padding-top: rem(32);
+      }
 
-        >p {
-          @include font-face(default, $font-med, 400, var(--dark-grayish-violet));
-        }
+      &--details {
+        @include font-face(default, $font-med, 400, var(--dark-grayish-violet));
       }
     }
   }
