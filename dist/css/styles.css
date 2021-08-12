@@ -62,12 +62,6 @@ body ::selection {
   background: var(--grayish-blue);
   color: var(--very-light-gray);
 }
-@media (min-width: 87.5em) {
-  body {
-    max-width: 90rem;
-    margin: auto;
-  }
-}
 
 @media (min-width: 64em) {
   .hide-for-desktop {
@@ -105,12 +99,8 @@ html {
 
 body {
   height: 100%;
+  margin: 0;
   padding: 0;
-}
-@media (max-width: 87.4375em) {
-  body {
-    margin: 0;
-  }
 }
 
 main {
