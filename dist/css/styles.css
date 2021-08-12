@@ -582,7 +582,7 @@ template {
 .features__section-1--icon, .features__section-2--icon, .features__section-3--icon {
   padding-top: 2.75rem;
 }
-.features__section-1--details > h2, .features__section-2--details > h2, .features__section-3--details > h2 {
+.features__section-1--heading, .features__section-2--heading, .features__section-3--heading {
   font-family: var(--font-family-serif);
   color: var(--very-dark-violet);
   font-size: 1.75rem;
@@ -590,7 +590,7 @@ template {
   margin-bottom: 1.125rem;
   padding-top: 2rem;
 }
-.features__section-1--details > p, .features__section-2--details > p, .features__section-3--details > p {
+.features__section-1--details, .features__section-2--details, .features__section-3--details {
   font-family: var(--font-family-sans-serif);
   color: var(--dark-grayish-violet);
   font-size: 1rem;
