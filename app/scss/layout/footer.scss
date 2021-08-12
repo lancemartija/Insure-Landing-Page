@@ -5,6 +5,7 @@
   position: relative;
   padding: rem(54) 0 rem(70);
   background-color: var(--very-light-gray);
+  overflow: hidden;
 
   @include breakpoint-up(medium) {
     padding: 0 rem(24) rem(64);
