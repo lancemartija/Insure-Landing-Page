@@ -81,7 +81,7 @@
     }
 
     &-links {
-      @include position(absolute, $top: rem(80), $right: 0, $bottom: 0, $left: 0);
+      @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
       background-color: var(--very-dark-violet);
       background-image: url('/app/images/bg-pattern-mobile-nav.svg');
       background-position-y: bottom;
@@ -89,6 +89,7 @@
       background-size: contain;
       display: flex;
       flex-direction: column;
+      margin-top: rem(80);
       padding: rem(48) rem(24) 0;
       text-align: center;
       visibility: hidden;
