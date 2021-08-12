@@ -2,17 +2,16 @@
 
 .header {
   align-items: center;
-  background-color: #fff;
   display: flex;
   justify-content: space-between;
   padding: rem(24);
+  z-index: 2;
 
   @include breakpoint-up(medium) {
     padding: rem(28) rem(72);
   }
 
   @include breakpoint-up(large) {
-    background-color: var(--very-light-gray);
     padding: rem(21) rem(120);
   }
 
@@ -57,6 +56,7 @@
 
     &--btn {
       @include font-face(default, $font-sm, 700, $color: var(--very-dark-violet));
+      background-color: #fff;
       border-radius: 0;
       border: 2px solid var(--very-dark-violet);
       cursor: pointer;
@@ -93,7 +93,7 @@
       padding: rem(48) rem(24) 0;
       text-align: center;
       visibility: hidden;
-      z-index: 1;
+      z-index: 2;
 
       >a {
         @include font-face(default, rem(18), 700, $color: var(--very-light-gray));
@@ -110,7 +110,13 @@
         text-transform: uppercase;
         margin: 0 auto;
         max-width: rem(327);
+        transition: all 150ms ease-in-out;
         width: 100%;
+
+        &:active {
+          background-color: #fff;
+          color: var(--very-dark-violet);
+        }
       }
     }
   }
