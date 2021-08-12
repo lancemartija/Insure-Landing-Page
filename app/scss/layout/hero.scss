@@ -58,8 +58,10 @@
     line-height: .9;
     position: relative;
     margin-bottom: rem(6);
+    z-index: 1;
 
     @include breakpoint-up(large) {
+      font-size: rem(54);
       letter-spacing: 0;
       padding-top: rem(48);
 
@@ -72,14 +74,9 @@
     }
 
     @include breakpoint-up(xlarge) {
-      font-size: rem(54);
+      font-size: rem(72);
       padding-top: rem(72);
     }
-
-    @include breakpoint-up(xlarge) {
-      font-size: rem(72);
-    }
-
   }
 
   &__details {
@@ -100,11 +97,18 @@
     margin: 0 auto;
     max-width: rem(146);
     width: 100%;
+    z-index: 1;
 
-    &:hover {
+    &:active {
       background-color: var(--very-light-gray);
       color: var(--very-dark-violet);
     }
 
+    @include breakpoint-up(large) {
+      &:hover {
+        background-color: var(--very-light-gray);
+        color: var(--very-dark-violet);
+      }
+    }
   }
 }
