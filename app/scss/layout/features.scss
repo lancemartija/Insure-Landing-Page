@@ -4,8 +4,12 @@
   padding: rem(188) rem(26) rem(70);
   text-align: center;
 
+  @include breakpoint-up(medium) {
+    padding: rem(188) rem(26) rem(70);
+  }
+
   @include breakpoint-up(large) {
-    padding: rem(305) rem(120);
+    padding: rem(305) rem(120) rem(188);
     text-align: left;
   }
 
