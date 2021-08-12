@@ -14,13 +14,13 @@
   }
 
   @include breakpoint-up(xlarge) {
-    padding: rem(305) rem(165) rem(205);
+    padding: rem(305) rem(165) rem(162);
   }
 
   &__heading {
     @include font-face(heading, rem(48), 400, var(--very-dark-violet));
-      letter-spacing: .9;
-      position: relative;
+    letter-spacing: .9;
+    position: relative;
 
     &::before {
       @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
@@ -33,14 +33,14 @@
         margin: 0;
       }
     }
-     
+
     @include breakpoint-up(large) {
-      font-size: 54;
+      font-size: rem(54);
       letter-spacing: 0;
     }
-     
+
     @include breakpoint-up(xlarge) {
-      font-size: 72;
+      font-size: rem(72);
     }
   }
 
