@@ -18,8 +18,9 @@
   }
 
   &__heading {
-    @include font-face(heading, rem(46), 400, var(--very-dark-violet));
-    position: relative;
+    @include font-face(heading, rem(48), 400, var(--very-dark-violet));
+      letter-spacing: .9;
+      position: relative;
 
     &::before {
       @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
@@ -31,6 +32,15 @@
       @include breakpoint-up(large) {
         margin: 0;
       }
+    }
+     
+    @include breakpoint-up(large) {
+      font-size: 54;
+      letter-spacing: 0;
+    }
+     
+    @include breakpoint-up(xlarge) {
+      font-size: 72;
     }
   }
 
