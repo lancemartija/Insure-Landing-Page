@@ -24,7 +24,7 @@
     &::before {
       @include position(absolute, $content: '', $top: rem(-32), $right: 0, $left: 0);
       background-color: #9E96C6;
-      height: rem(2);
+      height: rem(1);
       margin: auto;
       width: rem(150);
 
