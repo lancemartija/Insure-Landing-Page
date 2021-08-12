@@ -1,7 +1,7 @@
 @use '../abstract'as *;
 
 .features {
-  padding: rem(188) rem(26) rem(140);
+  padding: rem(188) rem(26) rem(70);
   text-align: center;
 
   @include breakpoint-up(large) {
@@ -32,7 +32,7 @@
 
   &__section {
     &-wrapper {
-      @include breakpoint-up(large) {
+      @include breakpoint-up(medium) {
         display: grid;
         gap: rem(30);
         grid-template-columns: 1fr 1fr 1fr;
@@ -54,6 +54,12 @@
 
       &--details {
         @include font-face(default, $font-med, 400, var(--dark-grayish-violet));
+        max-width: rem(350);
+        margin: 0 auto rem(16);
+
+        @include breakpoint-up(medium) {
+          margin: 0;
+        }
       }
     }
   }
