@@ -16,12 +16,12 @@ html {
 
 body {
   height: 100%;
-  // margin: 0;
+  margin: 0;
   padding: 0;
 
-  @include breakpoint-down(large) {
-    margin: 0;
-  }
+  // @include breakpoint-down(large) {
+  //   margin: 0;
+  // }
 }
 
 main {
