@@ -552,14 +552,15 @@ template {
 }
 @media (min-width: 87.5em) {
   .features {
-    padding: 19.0625rem 10.3125rem;
+    padding: 19.0625rem 10.3125rem 12.8125rem;
   }
 }
 .features__heading {
   font-family: var(--font-family-serif);
   color: var(--very-dark-violet);
-  font-size: 2.875rem;
+  font-size: 3rem;
   font-weight: 400;
+  letter-spacing: .9;
   position: relative;
 }
 .features__heading::before {
@@ -574,8 +575,17 @@ template {
   width: 9.375rem;
 }
 @media (min-width: 64em) {
+  .features__heading {
+    font-size: 3.375rem;
+    letter-spacing: 0;
+  }
   .features__heading::before {
     margin: 0;
+  }
+}
+@media (min-width: 87.5em) {
+  .features__heading {
+    font-size: 4.5rem;
   }
 }
 @media (min-width: 40em) {
