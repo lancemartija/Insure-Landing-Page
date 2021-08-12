@@ -495,7 +495,7 @@ template {
     top: 0;
     left: 0;
     background-color: var(--very-light-gray);
-    height: 0.125rem;
+    height: 0.0625rem;
     width: 9.375rem;
   }
 }
@@ -575,7 +575,7 @@ template {
   right: 0;
   left: 0;
   background-color: #9E96C6;
-  height: 0.125rem;
+  height: 0.0625rem;
   margin: auto;
   width: 9.375rem;
 }
