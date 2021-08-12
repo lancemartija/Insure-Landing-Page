@@ -1,14 +1,142 @@
 @use '../abstract'as *;
 
 .footer {
-  // @include position(absolute, $right: 0, $bottom: 0, $left: 0);
   text-align: center;
+  position: relative;
+  padding: rem(54) 0 rem(70);
+  background-color: var(--very-light-gray);
+
+  @include breakpoint-up(medium) {
+    padding: 0 rem(24);
+  }
+
+  @include breakpoint-up(large) {
+    text-align: left;
+    padding: 0 rem(146) rem(64);
+  }
+
+  &__section-wrapper {
+
+    &-1,
+    &-2 {
+      position: inherit;
+      z-index: 1;
+    }
+
+    &-1 {
+      padding: rem(16) 0;
+      margin: 0 rem(16);
+      border-bottom: 1px solid #d9d9d9;
+
+      @include breakpoint-up(medium) {
+        margin: 0;
+      }
+
+      @include breakpoint-up(large) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: rem(48) 0 rem(36);
+      }
+    }
+
+    &-2 {
+      @include breakpoint-up(medium) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    padding: rem(16);
+
+    >svg {
+      display: block;
+    }
+
+    @include breakpoint-up(large) {
+      padding: 0;
+    }
+  }
+
+  &__socials {
+    padding: rem(16);
+    display: flex;
+    gap: rem(16);
+    justify-content: center;
+
+    &--facebook,
+    &--twitter,
+    &--pinterest,
+    &--instagram {
+      >svg {
+        display: block;
+
+        >path {
+          transition: all 150ms ease-in-out;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        path {
+          fill: var(--very-dark-violet);
+        }
+      }
+    }
+
+    @include breakpoint-up(large) {
+      padding: 0;
+    }
+  }
+
+  &__heading {
+    @include font-face(default, $font-sm, 700, var(--dark-grayish-violet));
+    text-transform: uppercase;
+    margin: rem(40) 0 rem(27);
+
+    @include breakpoint-up(large) {
+      margin: rem(48) 0 rem(34);
+    }
+  }
+
+  &__links {
+    padding: rem(7) 0;
+
+    >a {
+      @include font-face(default, $font-sm, 700, var(--very-dark-violet));
+      text-transform: uppercase;
+      position: relative;
+
+      &:hover {
+        &::before {
+          @include position(absolute, $content: '', $bottom: 0, $left: 0);
+          width: 100%;
+          height: rem(1);
+          background-color: var(--very-dark-violet);
+          transform: translateY(rem(-2));
+        }
+      }
+    }
+  }
 }
 
 .attribution {
+  @include position(absolute, $right: 0, $bottom: 0, $left: 0);
   @include font-face(default, rem(12), 400, var(--very-light-gray));
   background-color: var(--very-dark-violet);
   padding: rem(12);
+  text-align: center;
+  z-index: 1;
 
   >a {
     @include font-face(heading, rem(12), 400, var(--very-light-gray));
