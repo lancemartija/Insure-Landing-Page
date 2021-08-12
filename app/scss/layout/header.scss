@@ -83,7 +83,7 @@
     &-links {
       @include position(absolute, $top: 0, $right: 0, $bottom: 0, $left: 0);
       background-color: var(--very-dark-violet);
-      background-image: url('app/images/bg-pattern-mobile-nav.svg');
+      background-image: url('https://raw.githubusercontent.com/lancemartija/Insure-Landing-Page/8472d7877f4715b50aa76243b0e7f08a33f7adce/app/images/bg-pattern-mobile-nav.svg');
       background-position-y: bottom;
       background-repeat: no-repeat;
       background-size: contain;
