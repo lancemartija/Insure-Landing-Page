@@ -545,9 +545,14 @@ template {
   padding: 11.75rem 1.625rem 4.375rem;
   text-align: center;
 }
+@media (min-width: 40em) {
+  .features {
+    padding: 11.75rem 1.625rem 4.375rem;
+  }
+}
 @media (min-width: 64em) {
   .features {
-    padding: 19.0625rem 7.5rem;
+    padding: 19.0625rem 7.5rem 11.75rem;
     text-align: left;
   }
 }
@@ -631,7 +636,7 @@ template {
     height: 15.625rem;
     justify-content: space-between;
     padding: 5rem;
-    margin: 0 7.5rem;
+    margin: 0 7.5rem 9.375rem;
     text-align: left;
   }
 }
@@ -697,7 +702,7 @@ template {
 }
 @media (min-width: 40em) {
   .footer {
-    padding: 0 1.5rem;
+    padding: 0 1.5rem 4rem;
   }
 }
 @media (min-width: 64em) {
