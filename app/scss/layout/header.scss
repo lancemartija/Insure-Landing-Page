@@ -47,7 +47,7 @@
     a {
       @include font-face(default, $font-sm, 700, $color: var(--dark-grayish-violet));
       text-transform: uppercase;
-      transition: all 200ms ease-in-out;
+      transition: all 150ms ease-in-out;
 
       &:hover {
         color: var(--dark-violet);
