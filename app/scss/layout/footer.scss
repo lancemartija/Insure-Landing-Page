@@ -7,7 +7,7 @@
   background-color: var(--very-light-gray);
 
   @include breakpoint-up(medium) {
-    padding: 0 rem(24);
+    padding: 0 rem(24) rem(64);
   }
 
   @include breakpoint-up(large) {
