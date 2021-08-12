@@ -89,7 +89,6 @@
       background-size: contain;
       display: flex;
       flex-direction: column;
-      gap: rem(38);
       padding: rem(48) rem(24) 0;
       text-align: center;
       visibility: hidden;
@@ -99,6 +98,11 @@
         @include font-face(default, rem(18), 700, $color: var(--very-light-gray));
         padding: rem(6);
         text-transform: uppercase;
+        margin-bottom: rem(40);
+
+        &:is(:nth-last-child(2)) {
+          margin-bottom: rem(32);
+        }
       }
 
       &--btn {
